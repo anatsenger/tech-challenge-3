@@ -8,7 +8,7 @@ Este repositório demonstra um fluxo completo de fine-tuning de um foundation mo
 
 Entregáveis esperados no desafio incluem: documentação do preparo do dataset, descrição do processo de fine-tuning (parâmetros e ajustes), código, e um vídeo mostrando o modelo respondendo perguntas com base no fine-tuning (link no PDF final).
 
-#Estrutura
+# Estrutura
 
 finetuning_summarizer.ipynb — notebook com todo o pipeline:
 
@@ -22,7 +22,7 @@ finetuning_summarizer.ipynb — notebook com todo o pipeline:
 
 5. Testes pós-treino: geração com o modelo já ajustado (comparativo com a etapa 3).
 
-#Requisitos
+# Requisitos
 
 Python 3.10+
 GPU com CUDA (ex.: Google Colab com T4/A100)
@@ -99,15 +99,15 @@ O PDF pede documentação dos parâmetros de fine-tuning e do processo; acima es
 
 # Como rodar
 
-Abra o notebook finetuning_summarizer.ipynb no Google Colab.
+1. Abra o notebook finetuning_summarizer.ipynb no Google Colab.
 
-Monte seu Google Drive (célula já incluída) e ajuste:
+2. Monte seu Google Drive (célula já incluída) e ajuste:
 
 AMAZON_TITLES_PATH (caminho para trn.json)
 
 AMAZON_TITLES_TRATADOS_PATH (onde salvar trn_tratado.json)
 
-Execute as células em ordem:
+3. Execute as células em ordem:
 
 Preparação do ambiente e imports
 
@@ -119,4 +119,4 @@ Fine-tuning (trainer.train())
 
 Teste pós-treino (comparar com o pré-treino)
 
-Os artefatos de treino serão salvos em outputs/ (padrão do TrainingArguments.output_dir).
+4. Os artefatos de treino serão salvos em outputs/ (padrão do TrainingArguments.output_dir).
