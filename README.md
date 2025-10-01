@@ -74,25 +74,15 @@ Trainer: trl.SFTTrainer(model=..., tokenizer=..., dataset_text_field="text", ...
 TrainingArguments (principais, do notebook):
 
 per_device_train_batch_size = 2
-
 gradient_accumulation_steps = 4
-
 warmup_steps = 5
-
 max_steps = 60
-
 learning_rate = 2e-4
-
 fp16/bf16 conforme suporte (is_bfloat16_supported())
-
 optim = "adamw_8bit"
-
 weight_decay = 0.01
-
 lr_scheduler_type = "linear"
-
 seed = 3407
-
 output_dir = "outputs"
 
 O PDF pede documentação dos parâmetros de fine-tuning e do processo; acima estão os principais parâmetros usados no notebook.
@@ -103,20 +93,15 @@ O PDF pede documentação dos parâmetros de fine-tuning e do processo; acima es
 
 2. Monte seu Google Drive (célula já incluída) e ajuste:
 
-AMAZON_TITLES_PATH (caminho para trn.json)
-
-AMAZON_TITLES_TRATADOS_PATH (onde salvar trn_tratado.json)
+  AMAZON_TITLES_PATH (caminho para trn.json)
+  AMAZON_TITLES_TRATADOS_PATH (onde salvar trn_tratado.json)
 
 3. Execute as células em ordem:
 
-Preparação do ambiente e imports
-
-Leitura/tratamento do dataset
-
-Teste do modelo base
-
-Fine-tuning (trainer.train())
-
-Teste pós-treino (comparar com o pré-treino)
+  Preparação do ambiente e imports
+  Leitura/tratamento do dataset
+  Teste do modelo base
+  Fine-tuning (trainer.train())
+  Teste pós-treino (comparar com o pré-treino)
 
 4. Os artefatos de treino serão salvos em outputs/ (padrão do TrainingArguments.output_dir).
