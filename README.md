@@ -1,4 +1,4 @@
-# Corrida Genética
+# 🎯 Fine Tuning para Descrição de Produtos
 Tech Chalenge 3:
 Projeto de Pós-Graduação da FIAP — Disciplina de OpenAI
 
